@@ -1,0 +1,7 @@
+<resources>
+
+    <string name="app_name">Gulasch</string>
+    <string name="title_gulaschitem_detail">GulaschItem Detail</string>
+    <string name="title_gulaschitem_list">GulaschItems</string>
+
+</resources>
