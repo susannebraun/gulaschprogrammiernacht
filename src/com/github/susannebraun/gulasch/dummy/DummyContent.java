@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+
 public class DummyContent {
 
     public static class DummyItem {
@@ -29,7 +30,6 @@ public class DummyContent {
     static {
         addItem(new DummyItem("1", "LED Sample"));
         addItem(new DummyItem("2", "QR Scan Sample"));
-        addItem(new DummyItem("3", "Bar Item"));
     }
 
     private static void addItem(DummyItem item) {

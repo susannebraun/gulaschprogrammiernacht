@@ -1,6 +1,5 @@
 package com.github.susannebraun.gulasch.qr;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -11,7 +10,6 @@ import android.widget.TextView;
 
 import com.github.susannebraun.gulasch.R;
 import com.google.zxing.integration.android.IntentIntegrator;
-import com.google.zxing.integration.android.IntentResult;
 
 public class QRScanDetailFragment extends Fragment {
 
