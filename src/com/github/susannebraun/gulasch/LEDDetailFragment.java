@@ -19,6 +19,8 @@ import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.TextView;
 import android.widget.ToggleButton;
 
+
+// TODO: SB use AsyncTask to do network communication!
 public class LEDDetailFragment extends Fragment {
 
 	private static final String TOGGLE_STATE = "toggle_state";

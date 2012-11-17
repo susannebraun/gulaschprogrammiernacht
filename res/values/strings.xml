@@ -1,9 +1,13 @@
 <resources>
 
     <string name="app_name">Gulasch</string>
-     <string name="title_gulaschitem_list">Gulasch Items</string>
-    <string name="title_led_detail">LED</string>
+    <string name="title_gulaschitem_list">Gulasch Samples</string>
+    
+    <string name="title_led_detail">LED Sample</string>
    	<string name="label_led_detail">Toggle LED</string>
    	<string name="toggle_led_detail">On/Off</string>
 
+   	 <string name="title_qr_scan_detail">QR Scan Sample</string>
+   	 <string name="button_qr_scan_detail">Scan</string>
+   	 <string name="text_qr_scan_result_detail">Scan Result: </string>
 </resources>

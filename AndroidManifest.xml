@@ -22,9 +22,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
         <activity
             android:name=".LEDDetailActivity"
             android:label="@string/title_led_detail" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".GulaschItemListActivity" />
+        </activity>
+        
+         <activity
+            android:name="com.github.susannebraun.gulasch.qr.QRScanDetailActivity"
+            android:label="@string/title_qr_scan_detail" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".GulaschItemListActivity" />

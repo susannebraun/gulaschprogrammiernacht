@@ -27,8 +27,8 @@ public class DummyContent {
     public static Map<String, DummyItem> ITEM_MAP = new HashMap<String, DummyItem>();
 
     static {
-        addItem(new DummyItem("1", "LED"));
-        addItem(new DummyItem("2", "Foo Item"));
+        addItem(new DummyItem("1", "LED Sample"));
+        addItem(new DummyItem("2", "QR Scan Sample"));
         addItem(new DummyItem("3", "Bar Item"));
     }
 
