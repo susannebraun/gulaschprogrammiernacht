@@ -1,5 +1,7 @@
 <resources>
 
-    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar" />
+<!--     <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar" /> -->
+	<color name="red">#e82f2f</color>
+	<color name="white">#ffffff</color>
 
 </resources>
