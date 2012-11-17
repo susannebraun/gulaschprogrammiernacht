@@ -3,8 +3,6 @@ package com.github.susannebraun.gulasch;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.NavUtils;
-import android.view.MenuItem;
 
 public class GulaschItemListActivity extends FragmentActivity
         implements GulaschItemListFragment.Callbacks {
@@ -26,19 +24,24 @@ public class GulaschItemListActivity extends FragmentActivity
 
     @Override
     public void onItemSelected(String id) {
-        if (mTwoPane) {
-            Bundle arguments = new Bundle();
-            arguments.putString(GulaschItemDetailFragment.ARG_ITEM_ID, id);
-            GulaschItemDetailFragment fragment = new GulaschItemDetailFragment();
-            fragment.setArguments(arguments);
-            getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.gulaschitem_detail_container, fragment)
-                    .commit();
+    	if("1".equals(id)) {
+    		// LED
+    		if (mTwoPane) {
+//                Bundle arguments = new Bundle();
+//                arguments.putString(LEDDetailFragment.ARG_ITEM_ID, id);
+                
+                LEDDetailFragment fragment = new LEDDetailFragment();
+//                fragment.setArguments(arguments);
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.gulaschitem_detail_container, fragment)
+                        .commit();
 
-        } else {
-            Intent detailIntent = new Intent(this, GulaschItemDetailActivity.class);
-            detailIntent.putExtra(GulaschItemDetailFragment.ARG_ITEM_ID, id);
-            startActivity(detailIntent);
-        }
+            } else {
+                Intent detailIntent = new Intent(this, LEDDetailActivity.class);
+//                detailIntent.putExtra(LEDDetailFragment.ARG_ITEM_ID, id);
+                startActivity(detailIntent);
+            }
+    	}
+        
     }
 }

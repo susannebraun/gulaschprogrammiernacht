@@ -1,7 +1,9 @@
 <resources>
 
     <string name="app_name">Gulasch</string>
-    <string name="title_gulaschitem_detail">GulaschItem Detail</string>
-    <string name="title_gulaschitem_list">GulaschItems</string>
+     <string name="title_gulaschitem_list">Gulasch Items</string>
+    <string name="title_led_detail">LED</string>
+   	<string name="label_led_detail">Toggle LED</string>
+   	<string name="toggle_led_detail">On/Off</string>
 
 </resources>

@@ -35,7 +35,7 @@ public class GulaschItemListFragment extends ListFragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setListAdapter(new ArrayAdapter<DummyContent.DummyItem>(getActivity(),
-                R.layout.simple_list_item_activated_1,
+                R.layout.simple_list_item_1,
                 R.id.text1,
                 DummyContent.ITEMS));
     }

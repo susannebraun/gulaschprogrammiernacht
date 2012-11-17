@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="horizontal" >
+
+    <ToggleButton
+        android:id="@+id/ledToggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/toggle_led_detail"
+        android:layout_margin="16dp"
+       	android:padding="16dp"/>
+    
+    <TextView
+        style="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/label_led_detail"
+        tools:context=".GulaschItemDetailFragment" />
+    
+<!--     <TextView -->
+<!--         android:id="@+id/led_error" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_margin="16dp" -->
+<!--         android:textColor="@color/white" -->
+<!--         android:text="Error!" -->
+<!--         tools:context=".GulaschItemDetailFragment" /> -->
+
+ 
+ 
+ </LinearLayout>
