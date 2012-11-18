@@ -13,6 +13,8 @@ public class MyParkingLot {
 	public String zip;
 	
 	public String city;
+	
+	public boolean parked;
 
 	public MyParkingLot(long id, String name, String street, String streetNumber,
 			String zip, String city) {

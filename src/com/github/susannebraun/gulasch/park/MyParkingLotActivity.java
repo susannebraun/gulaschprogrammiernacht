@@ -3,6 +3,7 @@ package com.github.susannebraun.gulasch.park;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.github.susannebraun.gulasch.R;
@@ -22,6 +23,7 @@ public class MyParkingLotActivity extends Activity {
         Long id = 0l;
         String name = "";
         String adress = "";
+        boolean parked = false;
         
         // TODO: SB do i need this???
 //        if (savedInstanceState == null) {
@@ -40,11 +42,17 @@ public class MyParkingLotActivity extends Activity {
         		}
         		
         		adress = lot.getAdress();
+        		parked = lot.parked;
         	}
         }
         
         ((TextView) findViewById(R.id.text_my_parking_lot_name)).setText(name);
         ((TextView) findViewById(R.id.text_my_parking_lot_adress)).setText(adress);
+        if(parked) {
+        	ImageView parkedStatusImage = (ImageView) findViewById(R.id.image_my_parking_lot_parked_status);
+        	parkedStatusImage.setImageDrawable(getResources().getDrawable(R.drawable.parked_50));
+        	((TextView) findViewById(R.id.text_my_parking_lot_parked_status)).setText("beparkt");
+        }
     }
 
     @Override

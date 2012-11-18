@@ -27,9 +27,9 @@ public class MyParkingLotsActivity extends Activity {
         ListView myParkingLotsListView = (ListView) findViewById(R.id.list_my_parking_lots);
         if(myParkingLotsListView != null) {
         	
-        	final List<Map<String, Object>> data = DummyMyParkingLots.getListDummyData();
-        	int[] to = new int[] {R.id.two_line_list_item_text1, R.id.two_line_list_item_text2};
-        	String[] from = new String[] {"name", "adress"};
+        	final List<Map<String, Object>> data = DummyMyParkingLots.getListDummyData(this);
+        	int[] to = new int[] {R.id.two_line_list_item_text1, R.id.two_line_list_item_text2, R.id.two_line_list_item_icon};
+        	String[] from = new String[] {"name", "adress", "parked"};
         	myParkingLotsListView.setAdapter(new SimpleAdapter(this, data, R.layout.two_line_list_item, from, to));
         	
         	myParkingLotsListView.setOnItemClickListener(new OnItemClickListener() {
